@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+
+.ant-layout-sider {
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  background-color: $white;
+  border-right: 1px solid $gray91;
+  .ant-menu {
+    border-right: none;
+    .ant-menu-item-group-title {
+      color: $dark-gray;
+      font-weight: 600;
+    }
+    .ant-menu-item {
+      // color: $medium-gray;
+    }
+  }
+}

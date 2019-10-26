@@ -1,0 +1,9 @@
+@import "../../../styles/variables.scss";
+
+.ant-layout-header {
+  background-color: $white;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid $gray91;
+}
