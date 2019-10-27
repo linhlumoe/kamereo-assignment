@@ -1,11 +1,10 @@
-import React, { Suspense, lazy } from "react";
+import React from "react";
 import { Provider } from "react-redux";
-import store from "./states/store";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import store from "./states/store";
 import AppLayout from "./containers/AppLayout";
-import "./App.scss";
-import Spinner from "components/commons/Spinner";
 import AuthLayout from "containers/AuthLayout";
+import "./App.scss";
 
 function App() {
   return (

@@ -1,6 +1,7 @@
 import { all } from "redux-saga/effects";
-import WatcherStoreProfileSaga from "./store-profiles/saga";
+import profileSagas from "./store-profiles/sagas";
+import globalSagas from "./global/sagas";
 
 export default function* appSaga() {
-  // yield all([WatcherStoreProfileSaga()]);
+  yield all([profileSagas(), globalSagas()]);
 }

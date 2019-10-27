@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import storeProfileReducer from "./store-profiles/reducers";
+import globalReducer from "./global/reducer";
+import storeProfileReducer from "./store-profiles/reducer";
 
 const appReducer = combineReducers({
-  storeProfileReducer
+  global: globalReducer,
+  storeProfile: storeProfileReducer
 });
 
 export default appReducer;
