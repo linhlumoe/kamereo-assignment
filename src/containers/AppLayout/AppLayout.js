@@ -29,7 +29,7 @@ const AppLayout = props => {
                 path="/profile"
                 component={lazy(() => import("containers/StoreProfile"))}
               />
-              <Redirect from="/" to="/dashboard" exact />
+              <Redirect from="/" to="/profile" exact />
             </Switch>
           </Suspense>
         </Content>

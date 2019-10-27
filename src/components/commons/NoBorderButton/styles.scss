@@ -1,0 +1,10 @@
+@import "../../../styles/variables.scss";
+
+.noBorderButton {
+  .ant-btn {
+    background-color: $white;
+    color: $medium-gray;
+    border: none;
+    font-weight: 500;
+  }
+}

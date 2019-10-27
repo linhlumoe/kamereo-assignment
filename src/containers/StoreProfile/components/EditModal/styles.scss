@@ -1,0 +1,10 @@
+.editProfileWrapper {
+  .ant-modal {
+    width: 880px !important;
+  }
+  .ant-form-item {
+    &:last-child {
+      margin-bottom: 24px;
+    }
+  }
+}

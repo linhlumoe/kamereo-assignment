@@ -1,11 +1,25 @@
 import React, { memo } from "react";
 import PropTypes from "prop-types";
 import { Spin } from "antd";
+import "./styles.scss";
 
 const Spinner = props => {
-  const { spinning, tip, size } = props;
+  const { spinning, tip, size, children, fullPage } = props;
 
-  return <Spin spinning={spinning} tip={tip} size={size} />;
+  if (fullPage) {
+    return (
+      <div className="spinnerWrapper">
+        <Spin spinning={spinning} tip={tip} size={size}>
+          {children}
+        </Spin>
+      </div>
+    );
+  }
+  return (
+    <Spin spinning={spinning} tip={tip} size={size}>
+      {children}
+    </Spin>
+  );
 };
 
 Spinner.propTypes = {

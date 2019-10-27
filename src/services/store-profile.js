@@ -13,7 +13,14 @@ const mockGetProfileResult = {
     district: "1",
     city: "Hồ Chí Minh",
     address: "521 Hồ Tùng Mậu",
-    phone: "886-9944"
+    phone: "886-9944",
+    redInvoice: {
+      name: "KOI The International Company",
+      district: "1",
+      city: "Hồ Chí Minh",
+      address: "521 Hồ Tùng Mậu",
+      taxCode: "P7744944"
+    }
   }
 };
 
