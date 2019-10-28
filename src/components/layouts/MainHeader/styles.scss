@@ -1,9 +1,65 @@
-@import "../../../styles/variables.scss";
+@import '../../../styles/variables.scss';
 
-.ant-layout-header {
-  background-color: $white;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  border-bottom: 1px solid $gray91;
+.headerWrapper {
+  .ant-layout-header {
+    background-color: $white;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 1px solid $gray91;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    .ant-typography {
+      color: $main-green;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .extra-group {
+      display: flex;
+      cursor: pointer;
+      i {
+        font-size: 24px;
+      }
+      .message,
+      .card {
+        padding: 0 25px;
+        border-left: 1px solid $gray91;
+      }
+      .language {
+        padding: 0 10px;
+        border-left: 1px solid $gray91;
+        .ant-select-selection,
+        .ant-select-focus {
+          border: none;
+          box-shadow: none;
+          font-weight: 600;
+        }
+        i {
+          font-size: 8px;
+          margin-left: 5px;
+        }
+      }
+      .user-info {
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        border-left: 1px solid $gray91;
+        width: inherit;
+        .info {
+          margin-left: 10px;
+          line-height: 1;
+          .name {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+          }
+          .role {
+            color: $medium-gray;
+            margin-bottom: 0rem;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }

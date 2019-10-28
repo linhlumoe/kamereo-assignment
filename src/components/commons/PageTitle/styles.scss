@@ -1,8 +1,19 @@
-@import "../../../styles/variables.scss";
+@import '../../../styles/variables.scss';
 
 .pageTitleWrapper {
   .ant-typography {
     font-weight: 500;
     color: $main-green;
+    position: relative;
+    margin-bottom: 25px;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 50px;
+      height: 2px;
+      background-color: $main-green;
+      bottom: -10px;
+      left: 0;
+    }
   }
 }

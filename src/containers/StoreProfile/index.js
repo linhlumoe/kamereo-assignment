@@ -1,15 +1,23 @@
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import StoreProfile from "./StoreProfile";
-import { getProfile } from "states/store-profiles/actions";
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import StoreProfile from './StoreProfile';
+import {
+  getProfile,
+  updateProfile,
+  uploadImage,
+} from 'states/store-profiles/actions';
 
 const mapStateToProps = state => ({
-  storeProfile: state.storeProfile
+  storeProfile: state.storeProfile,
+  cities: state.general.cities,
+  generalLoading: state.general.loading,
 });
 const mapDispatchToProps = dispatch => {
   return bindActionCreators(
     {
-      getProfile
+      getProfile,
+      updateProfile,
+      uploadImage,
     },
     dispatch
   );

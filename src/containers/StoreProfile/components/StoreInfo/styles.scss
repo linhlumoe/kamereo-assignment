@@ -1,5 +1,16 @@
+@import '../../../../styles/variables.scss';
+
 .storeInfoWrapper {
-  .ant-btn {
+  img {
     width: 100%;
+  }
+  .infoWrapper {
+    display: grid;
+    grid-template-columns: 35% auto;
+    padding: 12px 0;
+    row-gap: 8px;
+    label {
+      color: $medium-gray;
+    }
   }
 }

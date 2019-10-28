@@ -1,0 +1,17 @@
+@import '../../../../styles/variables.scss';
+
+.defaultMessageWrapper {
+  padding: 15px 0;
+  .messageRow {
+    display: flex;
+    margin-bottom: 20px;
+    .ant-checkbox-wrapper {
+      margin-right: 12px;
+    }
+    .message {
+      padding: 10px;
+      border: 1px solid $main-green;
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,31 +1,15 @@
-import axios from "axios";
-import MockAdapter from "axios-mock-adapter";
+import axios from 'axios';
+import MockAdapter from 'axios-mock-adapter';
 
-export const fetchGet = (url, queryObj, mockResult) => {
-  const mock = new MockAdapter(axios, { delayResponse: 2000 });
+const mock = new MockAdapter(axios, { delayResponse: 1000 });
+
+export const fetchData = (url, payload, mockResult) => {
+  mock.reset();
   const config = {
-    method: "get",
+    method: 'get',
     url: url,
-    params: queryObj
+    data: payload,
   };
   mock.onGet(url, config).reply(200, mockResult);
-  return axios(config);
-};
-
-export const fetchPost = (url, payload) => {
-  const config = {
-    method: "post",
-    url: url,
-    data: payload
-  };
-  return axios(config);
-};
-
-export const fetchPut = (url, payload) => {
-  const config = {
-    method: "put",
-    url: url,
-    data: payload
-  };
   return axios(config);
 };

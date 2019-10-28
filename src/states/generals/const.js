@@ -1,0 +1,7 @@
+const ACTION_TYPES = {
+  GET_CITIES: 'general/GET_CITIES',
+  GET_CITIES_SUCCESS: 'general/GET_CITIES_SUCCESS',
+  GET_CITIES_FAILED: 'general/GET_CITIES_FAILED',
+};
+
+export default ACTION_TYPES;

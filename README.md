@@ -1,6 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Github: https://github.com/linhlumoe/react-assignment
+# Github: https://github.com/linhlumoe/react-assignment
+
+# Total time: 24 hours
+
+# Weakness: Lack of unit test
+
+# My opinions to improve UI/UX:
+
+1. With address, it's nice to have dynamic districts of each city, so we should choose the city first.
+2. We should make the form label consistent in English ("Tax code" instead of "MST") .
+3. With required fields, we should have validation at client side too.
+4. With logo, we should allow user to preview image before uploading to make sure that image is the best one and decrease uploading draft files.
 
 ## Available Scripts
 

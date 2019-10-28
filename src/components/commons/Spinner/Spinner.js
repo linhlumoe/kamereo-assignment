@@ -1,7 +1,7 @@
-import React, { memo } from "react";
-import PropTypes from "prop-types";
-import { Spin } from "antd";
-import "./styles.scss";
+import React, { memo } from 'react';
+import PropTypes from 'prop-types';
+import { Spin } from 'antd';
+import './styles.scss';
 
 const Spinner = props => {
   const { spinning, tip, size, children, fullPage } = props;
@@ -25,13 +25,15 @@ const Spinner = props => {
 Spinner.propTypes = {
   spinning: PropTypes.bool.isRequired,
   tip: PropTypes.string,
-  size: PropTypes.string
+  size: PropTypes.string,
+  fullPage: PropTypes.bool,
 };
 
 Spinner.defaultProps = {
   spinning: true,
-  tip: "Loading...",
-  size: "large"
+  tip: 'Loading...',
+  size: 'large',
+  fullPage: true,
 };
 
 export default memo(Spinner);

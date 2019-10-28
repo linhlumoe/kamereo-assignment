@@ -1,7 +1,7 @@
-import { all } from "redux-saga/effects";
-import profileSagas from "./store-profiles/sagas";
-import globalSagas from "./global/sagas";
+import { all } from 'redux-saga/effects';
+import profileSagas from './store-profiles/sagas';
+import generalSagas from './generals/sagas';
 
 export default function* appSaga() {
-  yield all([profileSagas(), globalSagas()]);
+  yield all([profileSagas(), generalSagas()]);
 }
